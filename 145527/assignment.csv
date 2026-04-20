@@ -1,0 +1,80 @@
+questionType,contentType,contentBody,intAnswer,prepTime(in_seconds),floatAnswer.max,floatAnswer.min,fitbAnswer,mcscAnswer,subjectiveAnswer,option.1,option.2,option.3,option.4,mcmcAnswer,tagRelationships,difficultyLevel,answerExplanation
+mcsc,text,What is the primary purpose of a SIEM system?,,,,,,3,,To block all incoming traffic,To encrypt network data,To correlate logs and generate meaningful security alerts,To store backup files,,69e3583b79fec75a97936f3c,0,SIEM systems analyze and correlate logs to detect suspicious patterns and generate alerts. :contentReference[oaicite:0]{index=0}
+mcsc,text,Why are individual log events considered insufficient for detecting threats?,,,,,,2,,They are always encrypted,They lack context when viewed alone,They consume too much storage,They are always incorrect,,69e3583b79fec75a97936f3c,0,Individual events are fragmented and need correlation with context to identify suspicious activity. :contentReference[oaicite:1]{index=1}
+mcsc,text,Which factor is crucial for sequencing events correctly in SIEM?,,,,,,2,,File size,Timestamp,Log color,User interface,,69e3583b79fec75a97936f3c,0,Timestamps help determine the correct sequence of events during correlation. :contentReference[oaicite:2]{index=2}
+mcsc,text,What is the role of normalization in SIEM?,,,,,,2,,Deleting unnecessary logs,Converting logs into a uniform format,Encrypting log data,Backing up logs,,69e3583b79fec75a97936f3c,0,Normalization standardizes logs from different sources for unified analysis. :contentReference[oaicite:3]{index=3}
+mcsc,text,Which component defines the order of events in correlation logic?,,,,,,3,,Threshold,Pattern,Sequence,Alert,,69e3583b79fec75a97936f3c,0,Sequence determines the order in which events occur and is critical for identifying patterns. :contentReference[oaicite:4]{index=4}
+mcsc,text,What does a threshold represent in SIEM correlation?,,,,,,2,,Maximum storage capacity,Limit on event frequency,Encryption level,Network bandwidth,,69e3583b79fec75a97936f3c,0,Threshold defines limits such as number of failed logins within a time frame. :contentReference[oaicite:5]{index=5}
+mcsc,text,Which log type is commonly used in Unix/Linux systems?,,,,,,2,,Event Viewer logs,Syslog,Registry logs,Kernel dump logs,,69e3583b79fec75a97936f3c,0,Syslog is widely used in Unix/Linux systems for logging system activities. :contentReference[oaicite:6]{index=6}
+mcsc,text,What is a common cause of false positives in SIEM systems?,,,,,,2,,Too much encryption,Lack of contextual information,Low network traffic,Small log size,,69e3583b79fec75a97936f3c,0,"Without proper context, normal events may be incorrectly flagged as suspicious. :contentReference[oaicite:7]{index=7}"
+mcsc,text,What role do firewalls play in SIEM architecture?,,,,,,2,,Generate logs only,Reduce noise by filtering unwanted traffic,Store all logs permanently,Replace SIEM systems,,69e3583b79fec75a97936f3c,0,Firewalls filter traffic and reduce unnecessary events before they reach SIEM systems. :contentReference[oaicite:8]{index=8}
+mcsc,text,Which SIEM component is responsible for detecting suspicious patterns?,,,,,,3,,Data collection,Buffering,Correlation engine,Logging system,,69e3583b79fec75a97936f3c,0,"The correlation engine applies rules, patterns, and thresholds to detect threats. :contentReference[oaicite:9]{index=9}"
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,
+Subjective,,,,,,,,,,,,,,,,,
+"# 📝 Subjective Assignment: SIEM Fundamental
+
+---
+
+## Question 1: SIEM Fundamentals (Conceptual Understanding)
+
+Explain what a **SIEM (Security Information and Event Management)** system is and why it is important in modern cybersecurity.
+
+In your answer:
+
+- Define SIEM and its primary purpose  
+- Explain key benefits such as:
+  - Log centralization  
+  - Real-time threat detection  
+  - Compliance support (e.g., PCI DSS, GDPR)  
+- Describe the core components of SIEM:
+  - Data collection  
+  - Normalization  
+  - Correlation  
+  - Alerting  
+
+---
+
+## Question 2: ELK Stack and Detection Techniques (Analytical)
+
+Explain how the **ELK Stack** functions as a SIEM solution.
+
+In your answer:
+
+- Describe the role of each component:
+  - Elasticsearch  
+  - Logstash  
+  - Kibana  
+  - FileBeat  
+- Explain how logs flow through the system from ingestion to visualization  
+- Compare:
+  - Rule-based detection  
+  - Behavioral (anomaly-based) detection  
+- Explain how integrating **threat intelligence feeds** improves detection capabilities  
+
+---
+
+## Question 3: Practical Scenario: Deployment and Troubleshooting (Applied) - Optional
+
+You are setting up a SIEM lab using **ELK Stack with Docker**, and you encounter the following issues:
+
+- Docker containers fail to start due to port conflicts  
+- Images fail to download due to DNS errors  
+- Logs are not appearing in Kibana after setup  
+
+Answer the following:
+
+1. Explain possible causes for each issue and how you would troubleshoot them  
+2. Describe the steps required to ensure proper **data ingestion and visualization in Kibana**  
+3. Explain how a SOC analyst would use the SIEM dashboard to:
+   - Investigate alerts  
+   - Search logs  
+   - Identify potential incidents  
+
+---
+## Submission Guideline
+
+- Please submit your answer in the given text input box.
+- If you have any images supporting your answer, then please upload the image in google drive, provide the public access and share the link along with your answer.",,,,,,,,,,,,,,,,,

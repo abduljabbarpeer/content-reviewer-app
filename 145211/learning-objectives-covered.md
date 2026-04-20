@@ -1,0 +1,3 @@
+- Explain the CSS box model and visualize websites as collections of boxes
+- Identify height, width, and border as prerequisites for building layouts
+- Differentiate between margin and padding
